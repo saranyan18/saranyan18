@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I’m **saranyan**</h1>
+<h1 align="center">Hi 👋, I’m Saranyan</h1>
 <h3 align="center">AI Practitioner Specializing in NLP, Computer Vision, Transformer Models &amp; Continual Learning</h3>
 
 <p align="center">
