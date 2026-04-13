@@ -5,9 +5,7 @@
   <a href="https://github.com/saranyan18">
     <img src="https://komarev.com/ghpvc/?username=saranyan18&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views"/>
   </a>
-  &nbsp;&bull;&nbsp;
-  <a href="https://github.com/saranyan18?tab=repositories">
-    <img src="https://img.shields.io/github/languages/top/saranyan18.svg" alt="Top Languages"/>
+ 
   </a>
   &nbsp;&bull;&nbsp;
   <a href="https://github.com/saranyan18">
