@@ -18,7 +18,7 @@
 ## 📝 About Me
 I am a dedicated AI researcher and practitioner with a focus on building scalable, transformer-based architectures for vision and language tasks. My current research explores **continual learning** strategies using **spectral flux analysis** to enable models to adapt continuously without forgetting previous knowledge.
 
-- 🎓 **Education:** B.Tech in AI &amp; DS (ongoing)  
+- 🎓 **Education:** B.Tech in AI &amp; DS  
 - 🌍 **Location:** Chennai, India  
 
 ---
