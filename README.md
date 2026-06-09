@@ -52,8 +52,8 @@ I am a dedicated AI researcher and practitioner with a focus on building scalabl
 
 ## 📚 Publications &amp; Talks
 > _Add links or DOIs here as you publish or present_  
-- **Spectral Flux-Based Continual Learning** — _Conference/Journal Name, Year_  
-- **Guardian Vision** — _Conference/Journal Name, Year_  
+- **Spectral Flux-Based Continual Learning** — 
+- **Guardian Vision** —   
 
 ---
 
