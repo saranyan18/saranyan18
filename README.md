@@ -1,75 +1,117 @@
-<h1 align="center">Saranyan here 👋</h1>
-<h3 align="center">AI Practitioner Specializing in NLP, Computer Vision, Transformers & Continual Learning</h3>
+<div align="center">
 
-<p align="center">
-  <a href="https://github.com/saranyan18">
-    <img src="https://komarev.com/ghpvc/?username=saranyan18&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views"/>
-  </a>
-  &nbsp;•&nbsp;
-  <a href="https://github.com/saranyan18">
-    <img src="https://img.shields.io/github/followers/saranyan18?label=Follow&style=social" alt="GitHub followers"/>
-  </a>
-</p>
+<img src="assets/banner.svg" alt="Saranyan M" width="760"/>
 
----
+</div>
 
-## 📝 About Me
-I am an AI researcher and practitioner focusing on building scalable, transformer-based architectures for vision and language tasks. My research explores **continual learning** strategies using **spectral flux analysis** to mitigate catastrophic forgetting under real-time distribution shifts.
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-- 🎓 **Education:** B.Tech in AI & DS  
-- 🌍 **Location:** Chennai, India  
+## `$ ls ./projects`
 
----
+```
+ #   PROJECT                                      DOMAIN
+ ─────────────────────────────────────────────────────────────────────
+ 01  Custom Second-Order Optimizer                Optimization
+ 02  Continual Few-Shot Learning                  Continual Learning
+ 03  Spectral Filter Utility Modulation           Continual Learning
+ 04  Memory-Efficient Full-Parameter Optimizer    Optimization / LLMs
+ 05  Bilinear Fallacy Detection & Steering        Interpretability / NLP
+```
 
-## 🔭 Current Projects
-- **Continual Learning via Spectral Flux Analysis** — Detecting distribution shifts and updating model weights on the fly without catastrophic forgetting.
-- **Vision Transformers & DETR** — End-to-end object detection, feature extraction, and segmentation pipelines using ViT and DEtection TRansformer architectures.
-- **Robust Image Descriptors** — High-capacity feature extraction pipelines designed for out-of-distribution visual representation.
+<img src="assets/divider.svg" width="100%" alt=""/>
 
----
+## 01 · Custom Second-Order Optimizer
 
-## 🛠️ Skills & Tools
+> A novel optimizer comparable to Adam, built on pseudo second-order information.
 
-<p align="left">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="32" height="32"/>&nbsp;
-  <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="PyTorch" width="32" height="32"/>&nbsp;
-  <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="TensorFlow" width="32" height="32"/>&nbsp;
-  <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" width="32" height="32"/>&nbsp;
-  <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="OpenCV" width="32" height="32"/>&nbsp;
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="Docker" width="32" height="32"/>&nbsp;
-  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" width="32" height="32"/>&nbsp;
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux" width="32" height="32"/>
-</p>
+```
+  gradients ──► pseudo 2nd-order curvature estimate ──► adaptive update
+```
 
-- **Core:** Python, C++, PyTorch, Hugging Face (`transformers`, `timm`), OpenCV
-- **Research Domains:** Transformers, Vision-Language Models, Continual Learning, Object Detection (DETR/YOLO)
-- **Tooling & Infra:** Git, Docker, Linux, Weights & Biases, ONNX
+- Incorporates pseudo second-order gradient information to capture the curvature of the loss landscape
+- Significantly improves convergence rates in deep architectures
 
----
+`Optimizer Design` `Deep Learning` `PyTorch`
 
-## 📚 Research & Preprints
-- **Spectral Flux-Based Continual Learning** — *Preprint / Repo Link*
-- **Guardian Vision** — *Preprint / Repo Link*
+<img src="assets/divider.svg" width="100%" alt=""/>
 
----
+## 02 · Continual Few-Shot Learning
 
-## 🤝 Let’s Connect
-<p align="left">
-  <a href="mailto:saranyankvd11@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
-  &nbsp;
-  <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-  &nbsp;
-  <a href="https://huggingface.co/saranyan18" target="_blank">
-    <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat&logo=huggingface&logoColor=black" alt="Hugging Face"/>
-  </a>
-</p>
+> A CV framework for lifelong adaptation from minimal examples.
 
----
+```
+  new class ──► few examples ──► adapt ──► old knowledge retained
+                                  (no catastrophic forgetting)
+```
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=saranyan18&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats"/>
-</p>
+- Generates novel classes and adapts continually over time
+- Learns and generalizes from minimal training examples (few-shot)
+- Avoids catastrophic forgetting
+
+`Few-Shot Learning` `Continual Learning` `Computer Vision`
+
+<img src="assets/divider.svg" width="100%" alt=""/>
+
+## 03 · Spectral Filter Utility Modulation for Continual Learning
+
+> One-shot continual learning that protects the filters a network still needs.
+
+```
+  task t ──► Spectral Filter Flux Tracking ──► utility scoring
+                                                    │
+        scaled LR per filter group ◄── overlay modulator
+```
+
+- One-shot continual learning framework across **20 CIFAR-100 tasks** (task-incremental)
+- **Spectral Filter Flux Tracking** and activation-gradient utility scoring to detect and quantify disruption of critical filters
+- Overlay modulator dynamically scales learning rates for specific filter groups, restricting updates to previously useful filters
+
+`Continual Learning` `CIFAR-100` `Catastrophic Forgetting`
+
+<img src="assets/divider.svg" width="100%" alt=""/>
+
+## 04 · Memory-Efficient Full-Parameter Optimization
+
+> Full-parameter fine-tuning of large models on standard 8GB consumer GPUs.
+
+```
+  training data ──► Randomized QR ──► orthonormal basis
+                                           │
+  momentum buffers ──► transition matrix ──┴──► pivoted, trajectory preserved
+                       (basis shifts in float32)
+```
+
+- Memory-efficient optimizer enabling full-parameter fine-tuning on **8GB GPUs**
+- **Randomized QR Decomposition** compresses training data into a low-overhead orthonormal basis
+- A transition matrix pivots historical momentum buffers without losing the training trajectory
+- Basis shifts computed in temporary **float32** to prevent underflow
+- Faster processing than competing memory-saving tools
+
+`Randomized QR` `Optimizer` `Large Model Fine-Tuning`
+
+<img src="assets/divider.svg" width="100%" alt=""/>
+
+## 05 · Bilinear Fallacy Detection & Steering (BFDS)
+
+> Inference-time detection and correction of logical fallacies in small AI models, with no retraining.
+
+```
+  premises ──► layer probes ──► vectors (u, v) ──► bilinear score (u × v)
+                                                         │
+                          steer model  ◄── threshold ◄───┘
+                          (1–10% frequency cap)
+```
+
+- Internal layer probes map interacting premises into vectors **u** and **v**
+- Bilinear activation score (u × v) identifies logical errors in the data stream
+- Activation threshold tuned against normal text, limiting steering to a **1–10%** frequency to prevent overcorrection
+
+`Interpretability` `Activation Steering` `NLP`
+
+<br>
+
+<div align="center">
+
+<img src="assets/footer.svg" alt="training loop" width="760"/>
+
+</div>
