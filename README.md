@@ -28,9 +28,8 @@
  #   PROJECT                                      DOMAIN
  ─────────────────────────────────────────────────────────────────────
  01  PivotAdam                                    Memory-Efficient Optimization
- 02  Continual Few-Shot Learning                  Continual Learning
- 03  Spectral Filter Utility Modulation           Continual Learning
- 04  Bilinear Fallacy Detection & Steering        Interpretability / NLP
+ 02 Spectral Filter Utility Modulation           Continual Learning
+ 03  Bilinear Fallacy Detection & Steering        Interpretability / NLP
 ```
 
 <img src="assets/divider.svg" width="100%" alt=""/>
