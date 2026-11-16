@@ -6,7 +6,7 @@
 
 <img src="assets/divider.svg" width="100%" alt=""/>
 
-## `$ cat ./stack`
+## `STACK`
 
 <div align="center">
 <table>
@@ -22,28 +22,7 @@
 </table>
 </div>
 
-## `$ cat ./experience`
-
-<div align="center">
-<table>
-<tr>
-<td align="center" width="130"><h2>🧠</h2><sub><b>Deep Learning</b></sub></td>
-<td align="center" width="130"><h2>🤖</h2><sub><b>Transformer<br/>Architectures</b></sub></td>
-<td align="center" width="130"><h2>💬</h2><sub><b>NLP</b></sub></td>
-<td align="center" width="130"><h2>👁️</h2><sub><b>Computer<br/>Vision</b></sub></td>
-</tr>
-<tr>
-<td align="center" width="130"><h2>♾️</h2><sub><b>Continual<br/>Learning</b></sub></td>
-<td align="center" width="130"><h2>⚙️</h2><sub><b>Custom Optimizer<br/>Design</b></sub></td>
-<td align="center" width="130"><h2>🧪</h2><sub><b>Research<br/>Prototyping</b></sub></td>
-<td align="center" width="130"><h2>📝</h2><sub><b>Scientific<br/>Writing</b></sub></td>
-</tr>
-</table>
-</div>
-
-<img src="assets/divider.svg" width="100%" alt=""/>
-
-## `$ ls ./projects`
+## `PROJECTS`
 
 ```
  #   PROJECT                                      DOMAIN
@@ -100,24 +79,7 @@ optimizer = PivotAdam(model.parameters(), lr=1e-4, rank=128, rotate_every=200)
 
 <img src="assets/divider.svg" width="100%" alt=""/>
 
-## 02 · Continual Few-Shot Learning
-
-> A CV framework for lifelong adaptation from minimal examples.
-
-```
-  new class ──► few examples ──► adapt ──► old knowledge retained
-                                  (no catastrophic forgetting)
-```
-
-- Generates novel classes and adapts continually over time
-- Learns and generalizes from minimal training examples (few-shot)
-- Avoids catastrophic forgetting
-
-`Few-Shot Learning` `Continual Learning` `Computer Vision`
-
-<img src="assets/divider.svg" width="100%" alt=""/>
-
-## 03 · Spectral Filter Utility Modulation for Continual Learning
+## 02 · Spectral Filter Utility Modulation for Continual Learning
 
 > One-shot continual learning that protects the filters a network still needs.
 
@@ -135,7 +97,7 @@ optimizer = PivotAdam(model.parameters(), lr=1e-4, rank=128, rotate_every=200)
 
 <img src="assets/divider.svg" width="100%" alt=""/>
 
-## 04 · Bilinear Fallacy Detection & Steering (BFDS)
+## 03 · Bilinear Fallacy Detection & Steering (BFDS)
 
 > Inference-time detection and correction of logical fallacies in small AI models, with no retraining.
 
